@@ -27,7 +27,7 @@
       <div class="mid-class">
          <div class="art-right-w3ls">
             <h2>Sign In and Sign Up</h2>
-            <form action="https://script.google.com/macros/s/AKfycbyxyCT0EYPS4DnH8UrmCpMubfF5LD2rm6FPMSI4WdCW14gM_Z6T3VuE3g/exec" method="POST">
+            <form action="singup.php" method="POST">
                <div class="main">
                   <div class="form-left-to-w3l">
                      <input type="text" name="name" placeholder="Username" required="">
@@ -60,12 +60,12 @@
                <div class="popup">
                   <!--login form-->
                   <div class="letter-w3ls">
-                     <form action="https://script.google.com/macros/s/AKfycbyxyCT0EYPS4DnH8UrmCpMubfF5LD2rm6FPMSI4WdCW14gM_Z6T3VuE3g/exec" method="POST">
+                     <form action="singup.php" method="POST">
                         <div class="form-left-to-w3l">
                            <input type="text" name="name" placeholder="Username" required="">
                         </div>
                         <div class="form-left-to-w3l">
-                           <input type="text" name="name" placeholder="Phone" required="">
+                           <input type="text" name="phone" placeholder="Phone" required="">
                         </div>
                         <div class="form-left-to-w3l">
                            <input type="email" name="email" placeholder="Email" required="">
@@ -74,7 +74,7 @@
                            <input type="password" name="password" placeholder="Password" required="">
                         </div>
                         <div class="form-left-to-w3l margin-zero">
-                           <input type="password" name="password" placeholder="Confirm Password" required="">
+                           <input type="password" name="repassword" placeholder="Confirm Password" required="">
                         </div>
                         <div class="btnn">
                            <button type="submit">Sign Up</button>
@@ -83,6 +83,7 @@
                      </form>
                      <div class="clear"></div>
                   </div>
+
                   <!--//login form-->
                   <a class="close" href="index.html">&times;</a>
                </div>
@@ -92,7 +93,11 @@
          <div class="art-left-w3ls">
             <h1 class="header-w3ls">
                SPECTRUM sign up & login Form
+            
             </h1>
+            <h4>NOTE: we are updating this sites login& registration page and 
+               we have not connected to database so please don't login or created
+               account. we will update soon</h4>
          </div>
       </div>
       <footer class="bottem-wthree-footer">
@@ -101,5 +106,81 @@
             <a href="https://www.linkedin.com/in/aatish-g-nair-914a981aa/" target="_blank">AATISH G</a>
          </p>
       </footer>
+      <!-- js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+	<!-- //js -->	
+	
+	<!--  light box js -->
+	<script src="js/lightbox-plus-jquery.min.js"> </script> 
+	<!-- //light box js-->
+	<!-- for-Testimonials -->
+	<!-- required-js-files-->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+		<script src="js/owl.carousel.js"></script>
+			<script>
+		$(document).ready(function() {
+		  $("#owl-demo").owlCarousel({
+			items : 1,
+			lazyLoad : true,
+			autoPlay : true,
+			navigation : false,
+			navigationText :  false,
+			pagination : true,
+		  });
+		});
+		</script>
+	<!--//required-js-files-->
+	<!-- //for-Testimonials -->
+
+
+	<!-- start-smoth-scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+	</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	 <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"singup.php",
+                data:$("#sign up").serialize(),
+                data:$("#sign in").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    location.reload()
+                    //window.location.href="https://aatishgnair.github.io/spetrum/index.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
    </body>
 </html>
