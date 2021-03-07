@@ -9,6 +9,7 @@ Author URL: http://w3layouts.com
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V60FB7HM9M"></script>
 <script>
@@ -18,7 +19,7 @@ Author URL: http://w3layouts.com
 
   gtag('config', 'G-V60FB7HM9M');
 </script>
-  <title>10G SPECTRUM - Contact </title>
+  <title>10G SPECTRUM™ - Contact </title>
 
 <!-- add icon link -->
 <link rel = "icon" href =  
@@ -48,8 +49,8 @@ Author URL: http://w3layouts.com
   <section class="w3l-header-4">
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
-              <h1><a class="navbar-brand" href="index.html"><span class="fa fa-check" aria-hidden="true"></span>
-                      SPECTRUM<span></span>
+              <h1><a class="navbar-brand" href="index.html"><span class="" aria-hidden="true"></span>
+                      10G SPECTRUM<span></span>
                   </a></h1>
               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
                   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,7 +155,8 @@ Author URL: http://w3layouts.com
              <div class="container">
                  <div class="d-grid align-form-map">
                      <div class="form-inner-cont">
-                         <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                      <form id="submit-form" action="">
+                         
                              <div class="form-input">
                                  <label for="w3lName">Name</label>
                                  <input type="text" name="w3lName" id="w3lName" placeholder="" />
@@ -254,7 +256,7 @@ Author URL: http://w3layouts.com
                   <li><a href="contact.html">Get in touch</a></li>
                   <li><a href="singup.html">Create account</a></li>
                   <li><a href="https://forms.gle/MG4LdTEqRXx31Wfc8">Make appoiment</a></li>
-                  <li><a href="#careers">Careers</a></li>
+                  <li><a href="https://forms.gle/bn5eJ6prq2Q1N4Uf9">Careers</a></li>
                   <li><a href="https://forms.gle/KoDAcG9XEFMe9yZ16">Site Feedack</a></li>
                 </ul>
               </div>
@@ -284,6 +286,7 @@ Author URL: http://w3layouts.com
     <button onclick="topFunction()" id="movetop" title="Go to top">
       <span class="fa fa-angle-up"></span>
     </button>
+   
     <script>
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {
@@ -365,6 +368,25 @@ Author URL: http://w3layouts.com
   <!--bootstrap-->
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- //bootstrap-->
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxBuKSgTE2mZWFWsXHFZuweEZM3BRuF7Xe5Lg7fZsb9DFIy6MJaa8slfZo2XeYZK76qkA/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://10gspectrum.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 
   </body>
 
