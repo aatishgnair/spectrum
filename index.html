@@ -18,9 +18,10 @@ Author URL: http://w3layouts.com
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  
+    gtag('config', 'G-V60FB7HM9M');
+  </script>
 
-  gtag('config', 'G-V60FB7HM9M');
-</script>
   <title>10G SPECTRUM™ - Home </title>
   
    <!-- add icon link -->
@@ -49,29 +50,7 @@ Author URL: http://w3layouts.com
 </head>
 
 <body>
-     <!-- Load Facebook SDK for JavaScript -->
-     <div id="fb-root"></div>
-     <script>
-       window.fbAsyncInit = function() {
-         FB.init({
-           xfbml            : true,
-           version          : 'v10.0'
-         });
-       };
-
-       (function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));</script>
-
-     <!-- Your Chat Plugin code -->
-     <div class="fb-customerchat"
-       attribution="setup_tool"
-       page_id="101668378659142">
-     </div>
+    
     
 <header id="site-header" class="fixed-top">
   <section class="w3l-header-4">
@@ -613,7 +592,9 @@ Author URL: http://w3layouts.com
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- //bootstrap-->
 
- 
+ <!--Add the following script at the bottom of the web page (before </body></html>)-->
+<script type="text/javascript">function add_chatinline(){var hccid=91938252;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+  add_chatinline();</script>
   </body>
 
   </html>
