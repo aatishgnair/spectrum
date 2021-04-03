@@ -863,6 +863,9 @@ input.checked {
 		padding: 3em 1.5em;
 	}
 }
-
+img{
+	max-width: fit-content;
+	max-height: fit-content;
+}
 
 /*--//responsive--*/
