@@ -149,7 +149,7 @@
      <fieldset>
       <legend for="46231900">Services</legend>
       <div class="form-group">
-          <select id="46231900" name="entry.89135754" class="form-control">
+          <select id="46231900" name="entry.89135754" class="form-control" required>
               <option value="">Choose..</option>
               <option value="Web developement&amp;design">Web developement&amp;design</option>
               <option value="Social Media Marketing">Social Media Marketing</option>
@@ -346,7 +346,7 @@ $('#bootstrapForm').submit(function (event) {
         dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
         error: function () {
   
-            alert('Booked Sucessfully.Thanks.')
+            //alert('Booked Sucessfully.Thanks.')
             
             window.location = 'thanks.html'
         }
