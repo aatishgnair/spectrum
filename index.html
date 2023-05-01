@@ -4,8 +4,8 @@
 <head>
 
   <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="10g Spectrum offers comprehensive online business solutions for small, medium, and large companies worldwide. Our team of experts provides top-notch services for web design and development, digital marketing, online advertising, e-commerce solutions, cloud computing, business automation, remote working solutions, and more.">
   <meta name="keywords" content="Complete online business solutions, Virtual business solutions, Software company, Web design and development, Digital marketing services, Online advertising, E-commerce solutions, Cloud computing, Business automation, Remote working solutions, Small business support, Global clientele, UAE-based company, Kerala-based company, US-based company, Indian company, Japan-based company">
 
@@ -14,6 +14,17 @@
 
   <!-- add icon link -->
   <link rel="icon" href="logo o.png" type="image/x-icon">
+  <style>
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative
+    }
+    img {
+    max-width: NNNpx;
+}
+    </style>
 
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
@@ -26,6 +37,7 @@
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
 </head>
+
 
 
 <body>
@@ -100,12 +112,7 @@
       </div>
     </section>
   </header>
-  <div id="events-popup" class="popup">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <p>No events are available at the moment. We will update as soon as possible. Please check back again later. Thank you for your interest.</p>
-    </div>
-  </div>
+
 
   <section id="home" class="bg-dark pt-5 ">
     <div class="container py-lg-5 py-md-4">
@@ -240,7 +247,26 @@
       </div>
     </div>
   </section>
+<section class="video-section">
+  <iframe  width="560" height="315" src="https://www.youtube-nocookie.com/embed/AYZxmG0PazM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<style>
+  /* Video Section */
+.video-section {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
 
+.video-section iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
 
   <!-- //banner section -->
   <section>
@@ -514,38 +540,7 @@
 
 
   
-<section class="bg-dark py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-10">
-        <div class="bg-light rounded p-4">
-          <h2 class="text-center mb-4">Our Associated Partners</h2>
-          <div class="row row-cols-2 row-cols-md-3 g-4">
-            <div class="col">
-              <a href="https://pmny.in/yIeKezKarDyx" target="_blank"><img class="img-fluid rounded" src="https://partner.payu.in/packs/_/assets/images/icons/certified-partner-ce70c676cc844c678e8a6e7e373e6c0d.png" /></a>
-            </div>
-            <div class="col">
-              <a href="index.html" target="_blank"><img class="img-fluid rounded" src="https://johnsonsmarketing.co.uk/wp-content/uploads/2015/04/Google-Partner-Badge.jpeg" /></a>
-            </div>
-            <div class="col">
-              <a href="index.html" target="_blank"><img class="img-fluid rounded" src="https://www.docbyte.com/wp-content/uploads/2018/11/AWS-PN.png" /></a>
-            </div>
-            <div class="col">
-              <a href="index.html" target="_blank"><img class="img-fluid rounded" src="https://www.apexchat.com/wp-content/uploads/2021/03/Google-My-Business.png" /></a>
-            </div>
-            <div class="col">
-              <a href="index.html" target="_blank"><img class="img-fluid rounded" src="https://uploads.documents.cimpress.io/v1/uploads/8c4387de-1ef5-4d21-b22a-058386489f26~110/original?tenant=vbu-digital" /></a>
-            </div>
-            <div class="col">
-              <a href="index.html" target="_blank"><img class="img-fluid rounded" src="https://techcrunch.com/wp-content/uploads/2016/06/unnamed-14.png?_ga=2.139990651.939659908.1618310655-1404387636.1618310653" /></a>
-            </div>
-          </div>
-          <h6 class="text-center mt-4">Disclaimer: Image credits go to their respective companies.</h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 <section>
@@ -702,7 +697,7 @@
                 <div class="col-sm-4 col-6 footer-list-28 mt-5">
                   <h6 class="footer-title-28">Company</h6>
                   <ul>
-                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="https://blog.10gspectrum.com/">Blog</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="career.html">Careers</a></li>
