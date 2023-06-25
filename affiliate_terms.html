@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="logo o.png" type="image/x-icon">
+  <style>
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Affiliate Agreement - 10G Spectrum</h1>
+  <button class="accordion">Affiliate Commission Structure and Terms</button>
+  <div class="panel">
+    <h4>Pricing Range for Affiliate Commissions:</h4>
+    <p>1.1. Range 1: Projects with a total price less than 50,000 INR<br>
+    Commission Rate: 1.5% of the project price</p>
+    <p>1.2. Range 2: Projects with a total price between 50,000 INR and 1,00,000 INR<br>
+    Commission Rate: 1.8% of the project price</p>
+    <p>1.3. Range 3: Projects with a total price between 1,00,000 INR and 2,00,000 INR<br>
+    Commission Rate: 2% of the project price</p>
+    <p>1.4. Range 4: Projects with a total price above 2,00,000 INR<br>
+    Commission Rate: 2.5% of the project price</p>
+    
+    <h4>Commission Calculation:</h4>
+    <p>When an affiliate generates a sale, the commission will be calculated based on the total price of the project and the corresponding commission rate applicable to the respective price range.</p>
+    
+    <h4>Terms and Conditions:</h4>
+    <p>3.1. Payment Terms:<br>
+    Commission payments will be made via the chosen payment method within 28days after the end of each calendar month.<br>
+    The Company reserves the right to deduct any applicable fees, charges, or costs incurred during the payment process.</p>
+    
+    <p>3.2. Commission Adjustment:<br>
+    The Company retains the right to adjust the commission rates within each price range at its discretion. Any changes to the commission rates will be communicated to affiliates in advance.</p>
+    The commission will be calculated based on the made payment percentage, which is the percentage of the project price that has been paid by the client.
+If the client cancels the project within our company's specified cancellation period, no commission will be made.
+If the project is canceled by the company, the commission will be calculated based on the made payment percentage at the time of cancellation.
+    <p>3.3. Affiliate Responsibilities:<br>
+    Affiliates are responsible for promoting 10g Spectrum's products and services in a professional and ethical manner.<br>
+    Affiliates must comply with all applicable laws, regulations, and ethical standards during their promotional activities.</p>
+    
+    <p>3.4. Modifications and Termination:<br>
+    The Company may modify or terminate the affiliate program or any part thereof at any time with prior notice to affiliates.<br>
+    Affiliates have the right to terminate their participation in the affiliate program at any time by providing written notice to the Company.</p>
+    
+    <p>3.5. Limitation of Liability:<br>
+    The Company shall not be held liable for any indirect, incidental, special, or consequential damages arising out of or related to the affiliate program.</p>
+    
+    <p>3.6. Changes to Pricing:<br>
+    The Company reserves the right to change the pricing of its products and services from time to time without prior notice to affiliates. Such changes will not affect the commission rates within the respective price ranges.</p>
+  </div>
+
+  <section>
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries about our affiliate program, please feel free to reach out to us:</p>
+      <button class="contact-button" onclick="composeEmail()">Click Here</button>
+    </div>
+  
+    <script>
+      function composeEmail() {
+        var subject = "Interested in 10G Spectrum Affiliate Program";
+        var body = "Hello,\n\nI am interested in learning more about the 10G Spectrum Affiliate Program. Could you please provide me with more information?\n\nThank you!";
+        var email = "info@10gspectrum.com";
+  
+        var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+      }
+    </script>
+  
+    <style>
+      .contact-card {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 20px;
+        background-color: #f8f8f8;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+  
+      .contact-card h2 {
+        margin-top: 0;
+      }
+  
+      .contact-card p {
+        margin-bottom: 20px;
+      }
+  
+      .contact-button {
+        padding: 10px 20px;
+        background-color: #4285F4;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+  
+      .contact-button:hover {
+        background-color: #3367D6;
+      }
+    </style>
+  </section>
+  
+</body>
+</html>
