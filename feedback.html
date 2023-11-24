@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page - 10G Spectrum</title>
+    <style>
+        body {
+            background-color: #064D50; 
+            color: #ffffff;
+            font-family: 'Arial', sans-serif; 
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .feedback-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 1600px; 
+            border: none;
+        }
+
+        .watermark {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.1); 
+            transform: rotate(-45deg);
+            pointer-events: none;
+        }
+
+        .watermark:nth-child(2n) {
+            transform: rotate(45deg);
+        }
+
+        .watermark:nth-child(3n) {
+            transform: rotate(0deg);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<div class="watermark" style="top: 20%; left: 10%;">© 10G Spectrum</div>
+<div class="watermark" style="top: 20%; left: 80%;">© 10G Spectrum</div>
+<div class="watermark" style="top: 50%; left: 80%;">© 10G Spectrum</div>
+<div class="watermark" style="top: 50%; right: 80%;">© 10G Spectrum</div>
+<body>
+
+    <div class="feedback-container">
+        <div class="watermark" style="top: 20%; left: 10%;">© 10G Spectrum</div>
+        <div class="watermark" style="top: 50%; left: 70%;">© 10G Spectrum</div>
+        <div class="watermark" style="top: 80%; left: 40%;">© 10G Spectrum</div>
+        
+        <h1>Your Feedback is Valuable to Us</h1>
+        <p>Help us improve by sharing your thoughts and experiences.</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc6jNTqBNz3uL4l5ezo5345lJJPogBEBHDxQUpxS1fTjh3R1Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <footer>
+        <img src="https://10gspectrum.com/images/2021-07-04__2_-removebg-preview.png" alt="Footer Image">
+    </footer>
+</body>
+
+</html>
