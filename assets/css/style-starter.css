@@ -8,7 +8,11 @@ Author URL: http://w3layouts.com
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+
  */
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -23,7 +27,7 @@ Author URL: http://w3layouts.com
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #30c39e;
+  --primary: #064D50;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -137,11 +141,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #30c39e;
+  color: #064D50;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #21866c;
+    color: #20668f;
     text-decoration: underline; }
 
 a:not([href]) {
@@ -176,6 +180,17 @@ svg {
 
 table {
   border-collapse: collapse; }
+/* Within Container */
+.zoom-within-container {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+.zoom-within-container img {
+  transition: transform .5s ease;
+}
+.zoom-within-container:hover img {
+  transform: scale(1.5);
+}
 
 caption {
   padding-top: 0.75rem;
@@ -1826,8 +1841,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #30c39e;
-  border-color: #30c39e; }
+  background-color: #217185;
+  border-color: #305fc3; }
   .btn-primary:hover {
     color: #fff;
     background-color: #28a485;
@@ -2033,22 +2048,22 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5); }
 
 .btn-outline-primary {
-  color: #30c39e;
-  border-color: #30c39e; }
+  color: #20668f;
+  border-color: #20668f; }
   .btn-outline-primary:hover {
     color: #fff;
-    background-color: #30c39e;
-    border-color: #30c39e; }
+    background-color: #20668f;
+    border-color: #20668f; }
   .btn-outline-primary:focus, .btn-outline-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(48, 195, 158, 0.5); }
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #30c39e;
+    color: #20668f;
     background-color: transparent; }
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #30c39e;
-    border-color: #30c39e; }
+    background-color: #20668f;
+    border-color: #20668f; }
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(48, 195, 158, 0.5); }
@@ -2202,10 +2217,10 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #30c39e;
+  color: #3081c3;
   text-decoration: none; }
   .btn-link:hover {
-    color: #21866c;
+    color: #257092;
     text-decoration: underline; }
   .btn-link:focus, .btn-link.focus {
     text-decoration: underline;
@@ -4757,20 +4772,20 @@ a.close.disabled {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #30c39e !important; }
+  background-color: #054D50 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #269a7d !important; }
+  background-color: #054D50 !important; }
 
 .bg-secondary {
-  background-color: #6c757d !important; }
+  background-color: #054D50 !important; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #545b62 !important; }
+  background-color: #054D50 !important; }
 
 .bg-success {
   background-color: #28a745 !important; }
@@ -4778,15 +4793,15 @@ button.bg-secondary:focus {
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1e7e34 !important; }
+  background-color: #048287 !important; }
 
 .bg-info {
-  background-color: #17a2b8 !important; }
+  background-color: #048287 !important; }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: #117a8b !important; }
+  background-color: #048287 !important; }
 
 .bg-warning {
   background-color: #ffc107 !important; }
@@ -10798,17 +10813,26 @@ ul.social-icons li.twitter a span.fa {
 ul.social-icons li.twitter a:hover {
   background-color: #1da1f2; }
 
-ul.social-icons li.dribbble a span.fa {
+ul.social-icons li.instagram a span.fa {
   color: #ea4c89; }
 
-ul.social-icons li.dribbble a:hover {
+ul.social-icons li.instagram a:hover {
   background-color: #ea4c89; }
 
-ul.social-icons li.google a span.fa {
+ul.social-icons li.youtube a span.fa {
   color: #dd4b39; }
 
-ul.social-icons li.google a:hover {
+ul.social-icons li.youtube a:hover {
   background-color: #dd4b39; }
+
+ul.social-icons li.linkedin a span.fa {
+    color:#0077b5
+    ; }
+  
+ul.social-icons li.linkedin a:hover {
+    background-color: #0077b5
+    ; }
+
 
 ul.social-icons li a:hover span.fa {
   color: #fff; }
@@ -10863,22 +10887,22 @@ ul.social-icons li a:hover span.fa {
 .w3l-content-6 .info1 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 80%; }
+  width: 100%; }
 
 .w3l-content-6 .info2 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 95%; }
+  width: 99%; }
 
 .w3l-content-6 .info3 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 75%; }
+  width: 99%; }
 
 .w3l-content-6 .info4 h6.progress-tittle {
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 85%; }
+  width: 98%; }
 
 @media (max-width: 1440px) {
   .w3l-content-6 .counter-6-inf-left h4 {
@@ -10910,7 +10934,7 @@ ul.social-icons li a:hover span.fa {
 
 .w3l-specification-6 .counter-6-inf-left {
   padding: 4em 4em;
-  background: url(../images/bg.jpg) no-repeat 0px 0px;
+  background: url(../images/banner102.png) no-repeat 0px 0px;
   background-size: cover;
   z-index: 0;
   position: relative;
@@ -11045,7 +11069,7 @@ ul.social-icons li a:hover span.fa {
 
 /*--/middle--*/
 .w3l-middle {
-  background: url(../images/middle.jpg) no-repeat center;
+  background: url(../images/banner101.png) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 0;
